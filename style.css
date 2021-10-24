@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arima Madurai";
+    background-color: #6D6875;
+}
+
+h1{
+    font-family: "Roboto";
+
+}
+@media (min-width: 1400px){
+    .container{
+       max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (max-widht: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-widht: 768){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-widht: 576px){
+    .container{
+        max-width: 520px;
+    }
+}
+
+.cabecalho{
+    background-color: #FFB4A2; 
+   height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.marca img{
+    justify-content: space-between;
+    display: block;
+    width: 130px;
+    padding: 10px;
+
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 448px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-widht: 800px){
+    .cabecalho{
+        padding: 50px;
+    }
+
+    .menu ul{
+        width: 270px;
+    }
+}
+
+@media (max-width: 576px){
+    .cabecalho{
+        padding: 10px;
+        display: block;
+        height: 100%;
+        text-align: center;
+    }
+
+    .menu-ul{
+        width: 100%;
+        display: block;
+    }
+
+    .marca{
+        font-size: 74px;
+    }
+
+    .menu ul a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: block;
+    }
+
+}
+
+.conteudo-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 122px;
+    padding-right: 122px;
+    min-height: 700px;
+}
+
+.coluna-texto,
+.coluna-foto{
+    width: 50%;
+}
+
+.texto-titulo{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Roboto";
+    color: white;
+}
+
+.titulo-projeto{
+    font-size: 30px;
+    color: #FFB4A2;
+    font-weight: 400;
+}
+
+.texto-titulo2{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Roboto";
+    color: white;
+}
+
+.texto-corpo2{
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Roboto";
+    line-height: 41px;
+    color: white;
+}
+
+.texto-corpo{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Roboto";
+    line-height: 41px;
+    color: white;
+}
+
+.botao-principal{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 35px;
+    background-color: #FFB4A2;
+    border-radius: 16px;
+    font-size: 27px;
+    color: #B5838D;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.coluna-foto{
+    text-align: right;
+}
+
+ .foto-perfil{
+     width: 500px;
+     height: 500px;
+     object-fit: cover;
+     box-shadow: black 0 20px 38px 0;
+ }
+
+ .coluna-foto2{
+    text-align: right;
+}
+
+ .foto-projeto{
+     width: 400px;
+     height: 400px;
+     object-fit: cover;
+     box-shadow: black 0 20px 38px 0;
+ }
+
+ .redes-sociais{
+     display: flex;
+     margin-top: 100%;
+ }
+
+.redes-sociais a{
+    font-size: 55px;
+    color: whitesmoke;
+    padding-right: 20px;
+}
+
+@media (max-width: 1399px){
+    .texto-titulo{
+        font-size: 50px;
+    }
+    .texto-corpo{
+        font-size: 30px;
+    }
+    .foto-perfil{
+        width: 400px;
+        height: 400px;
+    }
+    .redes-sociais{
+        margin-top: 50px;
+    }
+}    
+
+@media (max-width: 992px){
+    .foto-perfil{
+        width: 300px;
+        height: 300px;
+    }
+    .texto-titulo{
+        font-size: 50px;
+    }
+    .texto-corpo{
+        line-height: 25px;
+        font-size: 30px;
+    }
+    .botao-principal{
+        padding: 17px 10px;
+        width: 90%;
+    }
+    .redes-sociais{
+        margin-top: 30px;
+    }
+}    
+
+@media (max-width: 768px){
+    .foto-perfil{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+    .texto-titulo{
+        font-size: 35px;
+        margin-top: 10px;
+
+    }
+    .texto-corpo{
+        font-size: 27px;
+        margin-top: 8px;
+    }
+    .botao-principal{
+        padding: 22px 8px;
+        width: 100%;
+    }
+    .conteudo-principal{
+        flex-flow: column-reverse;
+        padding: 20px;
+    }
+    .coluna-foto{
+        text-align: center;
+    }
+    .coluna-foto, .coluna-texto{
+        width: 100%;
+    }
+    .redes-sociais{
+        margin-top: 50px;
+        justify-content: center;
+    }
+}       
+
+#campo{
+    position: absolute;
+    top: 74px;
+    right: 131px;
+    display: none;
+}
+
+#campo input{
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 5px;
+    border: 0;
+}
+
+.titulo-projeto{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.linha-seta{
+    text-align: right;
+}
+
+.linha-seta a{
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+#formulario-contato input,
+#formulario-contato select,
+#formulario-contato textarea{
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    font-family: 'Roboto';
+    padding: 5px;
+    margin: 2px;
+}
+
+#formulario-contato button{
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+
+}
